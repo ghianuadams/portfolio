@@ -3,360 +3,646 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghianu Adams Herlambang — HCGA Manager · Organization Development & Operational Excellence</title>
+  <title>Ghianu Adams Herlambang — HCGA Manager · Organization Development & HR Systems</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
+    .font-mono-code { font-family: 'JetBrains Mono', monospace; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
+<body class="bg-[#FAFAFA] text-slate-900 antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
-      <a href="#home" class="font-bold text-slate-900 tracking-tight text-base">
-        GAH<span class="text-slate-400">.portfolio</span>
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2.5 font-bold text-slate-900 tracking-tight">
+        <span class="w-8 h-8 rounded-lg bg-slate-900 text-white text-xs font-bold flex items-center justify-center">GAH</span>
+        <span>Ghianu Adams</span>
       </a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
-        <a href="#tentang" class="hover:text-slate-900 transition">Profil</a>
-        <a href="#fokus" class="hover:text-slate-900 transition">Pilar Strategis</a>
-        <a href="#proyek" class="hover:text-slate-900 transition">Proyek Strategis</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#tentang" class="hover:text-slate-900 transition">Tentang</a>
+        <a href="#dampak" class="hover:text-slate-900 transition">Dampak</a>
+        <a href="#proyek" class="hover:text-slate-900 transition">Proyek</a>
         <a href="#cara-kerja" class="hover:text-slate-900 transition">Cara Kerja</a>
+        <a href="#pengalaman" class="hover:text-slate-900 transition">Pengalaman</a>
         <a href="#keahlian" class="hover:text-slate-900 transition">Keahlian</a>
         <a href="#kontak" class="hover:text-slate-900 transition">Kontak</a>
       </nav>
+      <a href="#kontak" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800 transition">
+        Hubungi Saya
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Mirrored layout from reference) -->
   <section id="home" class="bg-white border-b border-slate-200">
-    <div class="max-w-5xl mx-auto px-5 py-16 md:py-24">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium mb-6">
-        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-        HCGA Manager · Organization Development, Industrial Relations &amp; People Systems
-      </div>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight max-w-3xl">
-        Membangun tata kelola SDM, efisiensi biaya tenaga kerja, dan sistem operasional yang berkelanjutan.
-      </h1>
-      <p class="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-        Saya <strong class="font-semibold text-slate-900">Ghianu Adams Herlambang</strong>, praktisi 
-        <strong class="font-semibold text-slate-900">Human Capital, General Affairs, dan Organization Development</strong>. 
-        Saya menjembatani strategi bisnis dengan eksekusi lapangan melalui perancangan struktur organisasi, optimasi biaya tenaga kerja, kepatuhan hubungan industrial, serta sistem otomasi operasional yang terukur.
-      </p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#proyek" class="px-5 py-2.5 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition">
-          Lihat Proyek Strategis
-        </a>
-        <a href="#kontak" class="px-5 py-2.5 rounded-lg bg-white border border-slate-300 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">
-          Diskusi &amp; Kontak
-        </a>
+    <div class="max-w-6xl mx-auto px-5 py-14 md:py-20">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            HCGA Manager · Organization Development · HR Systems
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Saya mengubah proses HR &amp; operasional yang rumit menjadi tata kelola dan sistem yang bekerja rapi.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Saya <strong class="font-semibold text-slate-900">Ghianu Adams Herlambang</strong>, praktisi <strong class="font-semibold text-slate-900">HCGA Management &amp; Organization Development</strong> bersertifikasi BNSP dengan pengalaman 4+ tahun lintas manufaktur, logistik/gudang, dan korporasi. Saya merancang struktur tenaga kerja, mengendalikan kepatuhan regulasi ketenagakerjaan, serta membangun portal dan otomasi berbasis <strong class="font-semibold text-slate-900">Google Apps Script &amp; Web App</strong> untuk efisiensi bisnis.
+          </p>
+
+          <!-- Tech & Domain Pills -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">Workforce Planning</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">Industrial Relations (UU Cipta Kerja)</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">Organization Development</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">Talenta HRIS &amp; Payroll</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">Google Apps Script</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/80">People Analytics</span>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="#proyek" class="px-5 py-3 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition">
+              Lihat Portofolio &amp; Proyek
+            </a>
+            <a href="#dampak" class="px-5 py-3 rounded-lg bg-white border border-slate-300 text-slate-800 text-sm font-semibold hover:bg-slate-50 transition">
+              Lihat Dampak Bisnis
+            </a>
+          </div>
+
+          <!-- Key Metrics Row -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200">
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">4+ Thn</p>
+              <p class="text-xs text-slate-500 mt-0.5">Pengalaman HCGA &amp; IR</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">3,89</p>
+              <p class="text-xs text-slate-500 mt-0.5">IPK S2 Manajemen SDM</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">100%</p>
+              <p class="text-xs text-slate-500 mt-0.5">Kepatuhan BPJS &amp; Regulasi</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">BNSP</p>
+              <p class="text-xs text-slate-500 mt-0.5">Certified HR Professional</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Employee Profile Card (Mirrored from reference) -->
+        <div class="lg:col-span-5">
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm">
+            <div class="flex items-center justify-between text-[11px] font-mono-code uppercase tracking-wider text-slate-400 pb-4 border-b border-slate-200">
+              <span>EXECUTIVE PROFILE</span>
+              <span>HCGA · OD · IR</span>
+            </div>
+
+            <div class="flex items-center gap-4 mt-5">
+              <div class="w-14 h-14 rounded-xl bg-slate-900 text-white font-bold text-lg flex items-center justify-center shrink-0">
+                GAH
+              </div>
+              <div>
+                <h2 class="text-lg font-bold text-slate-900">Ghianu Adams Herlambang, S.Psi., M.M.</h2>
+                <p class="text-sm text-slate-600">HCGA Manager · OD &amp; Industrial Relations</p>
+              </div>
+            </div>
+
+            <dl class="mt-6 space-y-3.5 text-sm border-t border-slate-200 pt-5">
+              <div class="flex justify-between gap-4">
+                <dt class="text-slate-500">Perusahaan Terakhir</dt>
+                <dd class="font-semibold text-slate-900 text-right">PT Hegemoni Capital Innovation (Brighty &amp; Logspace)</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt class="text-slate-500">Fokus Utama</dt>
+                <dd class="font-semibold text-slate-900 text-right">HCGA Ops · OD · IR · Automation</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt class="text-slate-500">Pendidikan</dt>
+                <dd class="font-semibold text-slate-900 text-right">M.M. SDM (3,89) &amp; S.Psi. (3,79)</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt class="text-slate-500">Sertifikasi</dt>
+                <dd class="font-semibold text-slate-900 text-right">BNSP HR · Talent Acquisition · Master HR</dd>
+              </div>
+              <div class="flex justify-between gap-4">
+                <dt class="text-slate-500">Domisili &amp; Area</dt>
+                <dd class="font-semibold text-slate-900 text-right">Bekasi · Cikarang · Jakarta Timur</dd>
+              </div>
+            </dl>
+
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-mono-code text-slate-500">
+              <span>HCGA · OD · IR · 2022–2026</span>
+              <a href="https://linkedin.com/in/ghianuadams" target="_blank" rel="noopener" class="text-slate-900 font-semibold hover:underline">
+                LinkedIn ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Profil Section -->
-  <section id="tentang" class="max-w-5xl mx-auto px-5 py-16">
-    <div class="grid md:grid-cols-5 gap-10 items-start">
-      <div class="md:col-span-3 space-y-4">
-        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Executive Summary</p>
+  <!-- Sekilas Tentang Saya -->
+  <section id="tentang" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-7 space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Sekilas tentang saya</p>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-          Pemimpin HCGA yang memadukan tata kelola SDM, kendali biaya, dan sistem kerja.
+          Pemimpin HCGA yang memahami perilaku organisasi, regulasi, dan sistem operasional.
         </h2>
         <p class="text-slate-600 leading-relaxed">
-          Berbekal pendidikan <strong>S1 Psikologi</strong>, <strong>S2 Manajemen SDM</strong>, serta rekam jejak pengelolaan HCGA di lingkungan manufaktur, logistik/gudang, dan perkantoran korporat (<strong>Hegemoni Group</strong> &amp; <strong>Logspace</strong>), saya fokus memastikan fungsi HCGA menjadi mitra strategis bisnis—bukan sekadar fungsi administratif.
+          Latar belakang saya memadukan <strong>Psikologi (S.Psi.)</strong>, <strong>Magister Manajemen SDM (M.M.)</strong>, serta pengalaman langsung mengelola fungsi Human Capital dan General Affairs di industri manufaktur skala besar (<strong>Wings Group — PT Prakarsa Alam Segar Tbk &amp; PT Lion Metal Works Tbk</strong>) hingga bisnis multi-unit yang bergerak cepat (<strong>PT Hegemoni Capital Innovation / Brighty &amp; Logspace</strong>).
         </p>
         <p class="text-slate-600 leading-relaxed">
-          Pendekatan saya bertumpu pada tiga hal: <strong>kepastian regulasi &amp; hubungan industrial yang kondusif</strong>, <strong>produktivitas &amp; efisiensi rasio biaya tenaga kerja</strong>, serta <strong>digitalisasi proses kerja</strong> agar pimpinan unit dan manajemen memperoleh visibilitas data secara cepat dan akurat.
+          Saya percaya fungsi HCGA strategis tidak berhenti pada pembuatan kebijakan di atas kertas. Setiap strategi—mulai dari restrukturisasi organisasi, skema remunerasi berbasis performa, kepatuhan hubungan industrial, hingga pengelolaan fasilitas dan vendor—harus diterjemahkan menjadi alur kerja yang sederhana, terukur, dan didukung alat digital agar benar-benar berjalan di lapangan.
         </p>
       </div>
 
-      <div class="md:col-span-2 bg-white border border-slate-200 rounded-xl p-6 shadow-sm space-y-4 text-sm">
+      <div class="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 space-y-4 text-sm shadow-sm">
+        <div class="pb-3 border-b border-slate-100">
+          <p class="text-xs text-slate-400 uppercase font-semibold">Pendidikan Tinggi</p>
+          <p class="font-semibold text-slate-900 mt-1">S2 Magister Manajemen SDM · Universitas Persada Indonesia Y.A.I</p>
+          <p class="text-slate-500">2024–2026 · IPK 3,89 / 4,00</p>
+          <p class="font-semibold text-slate-900 mt-2">S1 Psikologi · Universitas Bhayangkara Jakarta Raya</p>
+          <p class="text-slate-500">2020–2024 · IPK 3,79 / 4,00</p>
+        </div>
+        <div class="pb-3 border-b border-slate-100">
+          <p class="text-xs text-slate-400 uppercase font-semibold">Sertifikasi Profesional</p>
+          <p class="font-medium text-slate-800 mt-1">HR Admin Staff BNSP Certified · Talent Acquisition Professional · Master &amp; Intermediate HR Certified</p>
+        </div>
         <div>
-          <span class="text-xs text-slate-400 uppercase font-semibold">Posisi &amp; Lingkup</span>
-          <p class="font-medium text-slate-900 mt-0.5">HCGA Management · Operation, OD &amp; IR</p>
-          <p class="text-slate-500">Multi-site Office, Warehouse &amp; Manufacturing</p>
-        </div>
-        <div class="border-t border-slate-100 pt-3">
-          <span class="text-xs text-slate-400 uppercase font-semibold">Latar Belakang Akademik</span>
-          <p class="font-medium text-slate-900 mt-0.5">S2 Manajemen SDM &amp; S1 Psikologi</p>
-          <p class="text-slate-500">People Analytics, Leadership &amp; Organizational Behavior</p>
-        </div>
-        <div class="border-t border-slate-100 pt-3">
-          <span class="text-xs text-slate-400 uppercase font-semibold">Mandat Utama</span>
-          <p class="text-slate-700 mt-0.5">Workforce Cost Governance, Industrial Relations, Talent Pipeline, OD &amp; HR Digitalization</p>
-        </div>
-        <div class="border-t border-slate-100 pt-3">
-          <span class="text-xs text-slate-400 uppercase font-semibold">Basis Operasional</span>
-          <p class="text-slate-700 mt-0.5">Bekasi, Cikarang &amp; Jakarta Timur, Indonesia</p>
+          <p class="text-xs text-slate-400 uppercase font-semibold">Kekuatan Utama</p>
+          <p class="text-slate-700 mt-1">Strategi bisnis → Tata kelola SDM, kepatuhan regulasi, pengendalian biaya tenaga kerja &amp; otomasi operasional</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pilar Strategis Section -->
-  <section id="fokus" class="bg-white border-y border-slate-200">
-    <div class="max-w-5xl mx-auto px-5 py-16">
-      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Pilar Strategis HCGA</p>
+  <!-- Dampak & Transformasi (Sebelum vs Sesudah) -->
+  <section id="dampak" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Dampak Tata Kelola &amp; Digitalisasi</p>
       <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
-        Empat area kontribusi utama bagi perusahaan
+        Sebelum dan sesudah penataan sistem HCGA.
       </h2>
+      <p class="text-slate-600 mt-2 max-w-2xl text-sm sm:text-base">
+        Setiap inisiatif dirancang untuk menggantikan proses manual, menekan kebocoran biaya operasional, dan memperkuat kepatuhan regulasi ketenagakerjaan.
+      </p>
 
-      <div class="grid sm:grid-cols-2 gap-6 mt-8">
-        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/60">
-          <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center text-sm font-bold mb-4">01</div>
-          <h3 class="font-semibold text-slate-900 text-lg">Workforce Planning &amp; Labor Cost Control</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-            Menyelaraskan pemenuhan tenaga kerja (organik, PKWT, <em>outsourcing</em>, dan <em>Daily Worker</em>) dengan fluktuasi volume bisnis, sekaligus mengendalikan rasio biaya lembur dan produktivitas per kepala.
-          </p>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="rounded-xl border border-slate-200 p-6 bg-slate-50/70">
+          <span class="text-xs font-mono-code font-semibold text-slate-500">01 · WORKFORCE &amp; COST</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-2">Perencanaan Manpower &amp; Skema Upah</h3>
+          <div class="mt-4 space-y-3 text-sm">
+            <div class="p-3 rounded-lg bg-white border border-slate-200/80">
+              <p class="text-xs font-semibold text-rose-600 uppercase">Sebelum</p>
+              <p class="text-slate-600 mt-1">Permintaan tenaga kerja dan jadwal shift tersebar di chat/form terpisah; upah harian flat memicu tingginya turnover dan lembur tidak terkendali.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 text-white">
+              <p class="text-xs font-semibold text-emerald-400 uppercase">Sesudah</p>
+              <p class="text-slate-200 mt-1">Perencanaan terpusat lewat <em>Logspacer</em> (Forecast vs. Actual terkunci) dan skema 3-Tier (C, B, A) berbasis output untuk efisiensi biaya lembur &amp; retensi.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/60">
-          <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center text-sm font-bold mb-4">02</div>
-          <h3 class="font-semibold text-slate-900 text-lg">Industrial Relations &amp; Regulatory Compliance</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-            Menjaga stabilitas operasional melalui tata kelola Peraturan Perusahaan (PP), kepatuhan kontrak kerja dan alih daya, audit vendor (keamanan &amp; tenaga kerja), serta penyelesaian perselisihan secara preventif.
-          </p>
+        <div class="rounded-xl border border-slate-200 p-6 bg-slate-50/70">
+          <span class="text-xs font-mono-code font-semibold text-slate-500">02 · IR &amp; COMPLIANCE</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-2">Kepatuhan Regulasi, BPJS &amp; Alih Daya</h3>
+          <div class="mt-4 space-y-3 text-sm">
+            <div class="p-3 rounded-lg bg-white border border-slate-200/80">
+              <p class="text-xs font-semibold text-rose-600 uppercase">Sebelum</p>
+              <p class="text-slate-600 mt-1">Administrasi PKWT/PKWTT, transisi vendor alih daya, dan audit kepesertaan berisiko menimbulkan selisih tagihan dan eksposur sengketa hubungan industrial.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 text-white">
+              <p class="text-xs font-semibold text-emerald-400 uppercase">Sesudah</p>
+              <p class="text-slate-200 mt-1">Tata kelola kontrak selaras UU Cipta Kerja, 100% kepatuhan BPJS (Edabu &amp; SIPP), serta rekonsiliasi tagihan vendor berbasis kehadiran aktual.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/60">
-          <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center text-sm font-bold mb-4">03</div>
-          <h3 class="font-semibold text-slate-900 text-lg">Organization Design, Performance &amp; Talent Pipeline</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-            Merancang struktur organisasi, jenjang kompetensi/<em>tiering</em>, jalur promosi internal (OJT &amp; asesmen teknis), serta skema remunerasi berbasis kinerja untuk memperkuat retensi talenta kunci.
-          </p>
+        <div class="rounded-xl border border-slate-200 p-6 bg-slate-50/70">
+          <span class="text-xs font-mono-code font-semibold text-slate-500">03 · RECRUITMENT &amp; TALENT</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-2">Rekrutmen &amp; Jalur Promosi Internal</h3>
+          <div class="mt-4 space-y-3 text-sm">
+            <div class="p-3 rounded-lg bg-white border border-slate-200/80">
+              <p class="text-xs font-semibold text-rose-600 uppercase">Sebelum</p>
+              <p class="text-slate-600 mt-1">Seleksi kandidat massal dan pemenuhan koordinator lapangan memakan waktu lama karena penyaringan manual dan ketergantungan rekrutmen luar.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 text-white">
+              <p class="text-xs font-semibold text-emerald-400 uppercase">Sesudah</p>
+              <p class="text-slate-200 mt-1">Integrasi ATS &amp; AI sourcing mempercepat seleksi, didukung jalur promosi internal (tes Pauli digital + OJT terukur) untuk mencetak pemimpin lini depan.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/60">
-          <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center text-sm font-bold mb-4">04</div>
-          <h3 class="font-semibold text-slate-900 text-lg">HR Digitalization &amp; General Affairs Governance</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-            Membangun ekosistem portal operasional, otomatisasi rekonsiliasi <em>payroll</em> dan fasilitas kerja (katering, aset, armada, perizinan gedung) untuk menutup kebocoran biaya dan mempercepat pengambilan keputusan.
-          </p>
+  <!-- Arsitektur Ekosistem HCGA (Mirrored diagram block from reference) -->
+  <section class="max-w-6xl mx-auto px-5 py-16">
+    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Arsitektur Ekosistem HCGA</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
+      Alur data terpadu dari perencanaan tenaga kerja hingga payroll &amp; GA.
+    </h2>
+
+    <div class="mt-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-[11px] font-mono-code text-slate-400">01 · PLANNING &amp; ATS</span>
+          <h3 class="font-bold text-slate-900 mt-1">Strategic MPP &amp; Hiring</h3>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Daily Strategic MPP, Request MP by Name, ATS &amp; AI Sourcing, serta asesmen OJT internal.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-[11px] font-mono-code text-slate-400">02 · OPERATIONS PORTAL</span>
+          <h3 class="font-bold text-slate-900 mt-1">Logspacer Command Portal</h3>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Penjadwalan shift (S1–S3), penguncian absensi aktual, dan Helpdesk Ticketing HCGA.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-[11px] font-mono-code text-slate-400">03 · HRIS &amp; COMPLIANCE</span>
+          <h3 class="font-bold text-slate-900 mt-1">Talenta HRIS &amp; Statutory</h3>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Database PKWT/PKWTT, SK mutasi/promosi, BPJS Edabu &amp; SIPP, serta kepatuhan UU Cipta Kerja.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900 text-white">
+          <span class="text-[11px] font-mono-code text-slate-400">04 · PAYROLL &amp; GA CONTROL</span>
+          <h3 class="font-bold mt-1">Rekonsiliasi &amp; Pelaporan</h3>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">Perhitungan lembur, insentif Tier A/B/C, proyeksi katering, audit petty cash, dan laporan otomatis.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Proyek Strategis Section -->
-  <section id="proyek" class="max-w-5xl mx-auto px-5 py-16">
-    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Proyek Strategis &amp; Dampak Bisnis</p>
-    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
-      Inisiatif kritikal di tingkat korporat &amp; operasional
-    </h2>
-
-    <div class="space-y-6 mt-8">
-      <!-- Project 1 -->
-      <article class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Workforce Architecture &amp; Cost Efficiency</span>
-          <span class="text-xs font-medium text-slate-500">Compensation &amp; Productivity Governance</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900">Restrukturisasi Skema Upah &amp; Tiering Daily Worker (Tier C, B, A)</h3>
-        <div class="grid md:grid-cols-3 gap-5 mt-4 text-sm">
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Konteks Bisnis</p>
-            <p class="text-slate-600 leading-relaxed">Skema upah flat untuk pekerja harian tidak membedakan tingkat keterampilan dan beban tanggung jawab, memicu tingginya <em>turnover</em> pekerja terlatih serta pembengkakan biaya lembur saat puncak volume.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Inisiatif Strategis</p>
-            <p class="text-slate-600 leading-relaxed">Merancang arsitektur 3-tier (C, B, A) berbasis matriks produktivitas lintas fungsi (Inbound, Inventory, Picker, Packer, Return), melakukan simulasi dampak finansial (<em>cost-benefit</em>), dan menyusun peta jalan implementasi untuk persetujuan direksi.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Dampak bagi Perusahaan</p>
-            <p class="text-slate-600 leading-relaxed">Menciptakan jalur kenaikan kompensasi yang objektif berbasis output, menekan ketergantungan pada jam lembur tidak produktif, dan menjaga stabilitas kapasitas tim inti di gudang.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Industrial Relations &amp; Vendor Governance</span>
-          <span class="text-xs font-medium text-slate-500">Compliance &amp; Risk Mitigation</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900">Transformasi Alih Daya (Outsourcing) &amp; Tata Kelola Kepatuhan Multi-Entitas</h3>
-        <div class="grid md:grid-cols-3 gap-5 mt-4 text-sm">
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Konteks Bisnis</p>
-            <p class="text-slate-600 leading-relaxed">Pertumbuhan unit bisnis (perkantoran, gudang logistik, dan fasilitas manufaktur) menuntut standardisasi perjanjian kerja, transisi tenaga alih daya, dan pengendalian risiko hukum ketenagakerjaan.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Inisiatif Strategis</p>
-            <p class="text-slate-600 leading-relaxed">Memimpin proses transisi tenaga <em>outsourcing</em> dan vendor keamanan, menyelaraskan struktur kontrak PKWT/aliansi vendor dengan regulasi ketenagakerjaan, serta membangun mekanisme audit kepatuhan dan rekonsiliasi tagihan berbasis kehadiran aktual.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Dampak bagi Perusahaan</p>
-            <p class="text-slate-600 leading-relaxed">Meminimalkan eksposur sengketa hubungan industrial, memastikan kesesuaian antara tagihan vendor dengan realisasi tenaga kerja di lapangan, serta menjaga nol gangguan operasional (<em>zero downtime</em>).</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Talent Mobility &amp; Leadership Pipeline</span>
-          <span class="text-xs font-medium text-slate-500">Organization Development</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900">Program Akselerasi Promosi Internal &amp; Asesmen Koordinator Lapangan</h3>
-        <div class="grid md:grid-cols-3 gap-5 mt-4 text-sm">
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Konteks Bisnis</p>
-            <p class="text-slate-600 leading-relaxed">Kebutuhan pemimpin lini depan (<em>Coordinator</em> &amp; <em>Supervisor</em>) yang memahami alur operasional secara cepat sulit dipenuhi secara instan hanya melalui rekrutmen eksternal.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Inisiatif Strategis</p>
-            <p class="text-slate-600 leading-relaxed">Menyusun kerangka seleksi promosi internal berbasis kompetensi dan ketahanan kerja (integrasi tes psikometri/Pauli digital, masa <em>On-the-Job Training</em> terukur, serta evaluasi panel bersama pimpinan operasional).</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Dampak bagi Perusahaan</p>
-            <p class="text-slate-600 leading-relaxed">Mempercepat kesiapan pemimpin lini depan dengan biaya rekrutmen lebih rendah, meningkatkan keterikatan karyawan melalui jalur karier yang jelas, dan memperkuat disiplin eksekusi tim.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 4 -->
-      <article class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">HR Digitalization &amp; Cost Control</span>
-          <span class="text-xs font-medium text-slate-500">Enterprise Operational Portal</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900">Logspace Command Portal (Logspacer) &amp; Integrasi Kontrol Payroll–GA</h3>
-        <div class="grid md:grid-cols-3 gap-5 mt-4 text-sm">
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Konteks Bisnis</p>
-            <p class="text-slate-600 leading-relaxed">Perencanaan <em>manpower</em> harian, penjadwalan 3 <em>shift</em>, pemesanan katering operasional, dan rekonsiliasi <em>payroll</em> sebelumnya berjalan terpisah sehingga rentan selisih anggaran dan keterlambatan laporan.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Inisiatif Strategis</p>
-            <p class="text-slate-600 leading-relaxed">Membangun portal operasional terpadu yang menghubungkan <em>Daily Strategic MPP</em>, penjadwalan berbasis nama, penguncian absensi aktual, sistem tiket HCGA, serta proyeksi otomatis katering dan <em>payroll</em> dengan otorisasi berlapis.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Dampak bagi Perusahaan</p>
-            <p class="text-slate-600 leading-relaxed">Menutup selisih antara rencana vs. realisasi tenaga kerja dan konsumsi operasional, mempercepat siklus tutup buku <em>payroll</em>, serta menghadirkan transparansi data <em>real-time</em> bagi manajemen.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 5 -->
-      <article class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Employee Engagement &amp; Culture</span>
-          <span class="text-xs font-medium text-slate-500">Corporate Wellbeing Program</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900">Inisiatif Budaya Kerja &amp; Keterikatan Karyawan Lintas Unit (Hebat Sports)</h3>
-        <div class="grid md:grid-cols-3 gap-5 mt-4 text-sm">
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Konteks Bisnis</p>
-            <p class="text-slate-600 leading-relaxed">Perbedaan lokasi kerja antara kantor pusat, gudang, dan pabrik berpotensi menciptakan sekat komunikasi lintas divisi.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Inisiatif Strategis</p>
-            <p class="text-slate-600 leading-relaxed">Menginisiasi program keterikatan karyawan berbasis minat dan kebugaran yang terukur melalui survei partisipasi, perencanaan anggaran terstruktur, serta evaluasi dampak kepuasan karyawan.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-slate-900 mb-1">Dampak bagi Perusahaan</p>
-            <p class="text-slate-600 leading-relaxed">Meningkatkan kohesi lintas unit dan tingkat kepuasan karyawan dengan alokasi anggaran yang tepat sasaran sesuai preferensi aktual karyawan.</p>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Cara Kerja Section -->
-  <section id="cara-kerja" class="bg-white border-y border-slate-200">
-    <div class="max-w-5xl mx-auto px-5 py-16">
-      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Pendekatan Kepemimpinan &amp; Eksekusi</p>
+  <section id="proyek" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Proyek Unggulan · Keterlibatan Penuh</p>
       <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
-        Bagaimana saya mengelola fungsi HCGA secara strategis
+        Inisiatif kritikal di bidang OD, Industrial Relations, dan Otomasi Operasional.
       </h2>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-        <div class="p-5 rounded-xl border border-slate-200">
-          <span class="text-xs font-bold text-slate-400">01 · DIAGNOSIS</span>
-          <h3 class="font-semibold text-slate-900 mt-1">Berbasis Data &amp; Realitas Lapangan</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Mengaudit rasio biaya tenaga kerja, kepatuhan regulasi, dan titik hambatan operasional sebelum merumuskan kebijakan.</p>
+      <div class="space-y-6 mt-10">
+        <!-- Project 1: OD & Compensation -->
+        <article class="rounded-2xl border border-slate-200 p-6 sm:p-8 bg-slate-50/50">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-mono-code font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Organization Development · Compensation Governance</span>
+            <span class="text-xs text-slate-500">Hegemoni Group &amp; Logspace</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mt-3">Restrukturisasi Skema Upah &amp; Tiering Daily Worker (Tier C, B, A)</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            <strong>Masalah sebelumnya:</strong> Skema upah flat untuk pekerja harian tidak membedakan keterampilan, tanggung jawab, dan output kerja lintas divisi gudang (Inbound, Inventory, Picker, Packer, Return), memicu turnover pekerja terampil dan pembengkakan lembur.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-200 text-sm">
+            <div>
+              <p class="font-semibold text-slate-900">Peran &amp; Analisis</p>
+              <p class="text-slate-600 mt-1">Merancang matriks kompetensi &amp; produktivitas 3-tier, melakukan simulasi <em>cost-benefit</em> untuk persetujuan manajemen.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Tools &amp; Metode</p>
+              <p class="text-slate-600 mt-1">People Analytics, Excel/Sheets Cost Modeling, KPI Productivity Matrix, Change Management.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Dampak Bisnis</p>
+              <p class="text-slate-600 mt-1">Menciptakan jalur kenaikan upah berbasis kinerja, menjaga stabilitas tim inti gudang, dan menekan lembur tidak produktif.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Logspacer -->
+        <article class="rounded-2xl border border-slate-200 p-6 sm:p-8 bg-slate-50/50">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-mono-code font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">HR Digitalization · Enterprise Operational Portal</span>
+            <span class="text-xs text-slate-500">Logspace Warehouse &amp; HCGA</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mt-3">Logspace Command Portal (Logspacer) &amp; Otomasi Kontrol Payroll–GA</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            <strong>Masalah sebelumnya:</strong> Perencanaan manpower harian, penjadwalan 3 shift, pemesanan katering operasional, tiket bantuan HCGA, dan rekonsiliasi payroll berjalan terpisah sehingga rawan selisih data dan keterlambatan laporan.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-200 text-sm">
+            <div>
+              <p class="font-semibold text-slate-900">Peran &amp; Arsitektur</p>
+              <p class="text-slate-600 mt-1">Merancang dan membangun web app internal untuk Daily Strategic MPP, Request MP by Name, Schedule MP, dan Helpdesk Ticketing.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Stack Teknologi</p>
+              <p class="text-slate-600 mt-1">Google Apps Script, HTML/JavaScript, Google Sheets, Role-based Edit Protection, Auto PDF/XLSX/CSV Mailer.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Dampak Bisnis</p>
+              <p class="text-slate-600 mt-1">Menutup selisih Forecast vs. Actual tenaga kerja dan katering, mengunci integritas data absensi, serta mempercepat rekonsiliasi payroll.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Industrial Relations & Outsourcing -->
+        <article class="rounded-2xl border border-slate-200 p-6 sm:p-8 bg-slate-50/50">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-mono-code font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Industrial Relations · Vendor &amp; Compliance Governance</span>
+            <span class="text-xs text-slate-500">Multi-Site Operations</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mt-3">Transformasi Alih Daya (Outsourcing), Keamanan &amp; Kepatuhan Regulasi</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            <strong>Masalah sebelumnya:</strong> Ekspansi unit perkantoran, gudang logistik, dan fasilitas manufaktur menuntut standardisasi perjanjian kerja, transisi tenaga alih daya, dan pengendalian risiko hukum ketenagakerjaan.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-200 text-sm">
+            <div>
+              <p class="font-semibold text-slate-900">Peran &amp; Eksekusi</p>
+              <p class="text-slate-600 mt-1">Memimpin transisi tenaga outsourcing dan vendor keamanan, menyelaraskan kontrak PKWT/aliansi vendor dengan UU Cipta Kerja.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Tata Kelola</p>
+              <p class="text-slate-600 mt-1">Labor Law Audit, SLA Vendor Management, Talenta HRIS, BPJS Edabu &amp; SIPP, Grievance Resolution.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Dampak Bisnis</p>
+              <p class="text-slate-600 mt-1">Nol gangguan operasional selama transisi, kepatuhan penuh jaminan sosial, dan kesesuaian tagihan vendor terhadap realisasi lapangan.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Internal Promotion & Recruitment -->
+        <article class="rounded-2xl border border-slate-200 p-6 sm:p-8 bg-slate-50/50">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-mono-code font-semibold px-2.5 py-1 rounded bg-slate-900 text-white">Talent Mobility · Recruitment &amp; Assessment</span>
+            <span class="text-xs text-slate-500">Leadership Pipeline</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mt-3">Program Akselerasi Promosi Internal (OJT) &amp; Rekrutmen Berbasis ATS/AI</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            <strong>Masalah sebelumnya:</strong> Pemenuhan pemimpin lini depan (Coordinator/Supervisor) dan rekrutmen volume tinggi membutuhkan proses seleksi yang lebih cepat sekaligus objektif mengukur ketahanan kerja.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-200 text-sm">
+            <div>
+              <p class="font-semibold text-slate-900">Peran &amp; Desain</p>
+              <p class="text-slate-600 mt-1">Menyusun alur seleksi promosi internal berbasis psikometri/tes Pauli digital, masa OJT terukur, serta mengintegrasikan ATS &amp; AI sourcing.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Perangkat</p>
+              <p class="text-slate-600 mt-1">Applicant Tracking System (ATS), AI Sourcing Tools, Digital Pauli Assessment, Competency Panel Review.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">Dampak Bisnis</p>
+              <p class="text-slate-600 mt-1">Mempercepat kesiapan pemimpin internal dengan biaya rekrutmen lebih efisien serta meningkatkan keterikatan karyawan.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Saya Bekerja (5-Step Process mirrored from reference) -->
+  <section id="cara-kerja" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Cara Saya Bekerja</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
+      Dari diagnosis lapangan sampai sistem dan kebijakan yang teradopsi.
+    </h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <span class="text-xs font-mono-code font-bold text-slate-400">01</span>
+        <h3 class="font-bold text-slate-900 mt-2">Gali Kebutuhan</h3>
+        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Observasi langsung ke gudang, pabrik, dan kantor; audit rasio biaya tenaga kerja dan titik macet operasional.</p>
+        <p class="text-[11px] font-mono-code text-slate-400 mt-3 pt-2 border-t border-slate-100">Audit · Wawancara User</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <span class="text-xs font-mono-code font-bold text-slate-400">02</span>
+        <h3 class="font-bold text-slate-900 mt-2">Rancang Kebijakan</h3>
+        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Menyusun SOP, aturan approval, struktur tiering/KPI, dan penyelarasan kepatuhan regulasi ketenagakerjaan.</p>
+        <p class="text-[11px] font-mono-code text-slate-400 mt-3 pt-2 border-t border-slate-100">SOP · Matriks · Compliance</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <span class="text-xs font-mono-code font-bold text-slate-400">03</span>
+        <h3 class="font-bold text-slate-900 mt-2">Bangun Alat Kerja</h3>
+        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Menerjemahkan alur kerja menjadi portal web, skrip otomasi, atau dashboard pelaporan yang ringan dan akurat.</p>
+        <p class="text-[11px] font-mono-code text-slate-400 mt-3 pt-2 border-t border-slate-100">Apps Script · Sheets · Web App</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <span class="text-xs font-mono-code font-bold text-slate-400">04</span>
+        <h3 class="font-bold text-slate-900 mt-2">Uji &amp; Penyelarasan</h3>
+        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Uji coba bersama pimpinan unit dan tim lapangan, serta pengajuan persetujuan manajemen berbasis simulasi data.</p>
+        <p class="text-[11px] font-mono-code text-slate-400 mt-3 pt-2 border-t border-slate-100">UAT · Stakeholder Alignment</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <span class="text-xs font-mono-code font-bold text-slate-400">05</span>
+        <h3 class="font-bold text-slate-900 mt-2">Kontrol &amp; Adopsi</h3>
+        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Pengaturan hak akses, penguncian data aktual, pendampingan tim, dan evaluasi berkala berbasis KPI.</p>
+        <p class="text-[11px] font-mono-code text-slate-400 mt-3 pt-2 border-t border-slate-100">Governance · KPI Review</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pengalaman & Pendidikan (Directly from CV) -->
+  <section id="pengalaman" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Perjalanan Karier &amp; Akademik</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
+        Pengalaman kepemimpinan HCGA, operasional, dan manufaktur.
+      </h2>
+
+      <div class="mt-10 space-y-8 border-l-2 border-slate-200 pl-6 ml-2">
+        <!-- Role 1 -->
+        <div class="relative">
+          <span class="w-3 h-3 rounded-full bg-slate-900 absolute -left-[31px] top-1.5 ring-4 ring-white"></span>
+          <p class="text-xs font-mono-code text-slate-500">Mei 2026 – Nov 2026 · Jakarta / Bekasi</p>
+          <h3 class="text-lg font-bold text-slate-900 mt-0.5">SPV HCGA Operation &amp; Industrial Relations</h3>
+          <p class="text-sm font-medium text-slate-700">PT Hegemoni Capital Innovation (Brighty &amp; Logspace)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-4">
+            <li>Merancang dan mengeksekusi strategi <em>workforce planning</em>, restrukturisasi organisasi, dan pemetaan talenta untuk ekspansi bisnis multi-unit.</li>
+            <li>Membangun kerangka manajemen kinerja berbasis data (KPI) serta program retensi untuk menekan turnover dan meningkatkan produktivitas.</li>
+            <li>Memimpin operasional harian HCGA: pengelolaan Daily Worker (DW), penjadwalan shift, pemantauan kehadiran, serta efisiensi operasional gudang &amp; kantor.</li>
+            <li>Menangani hubungan industrial secara proaktif, penyelesaian perselisihan, kepatuhan regulasi (UU Cipta Kerja), serta pengawasan fasilitas, armada, HSE, dan efisiensi anggaran pengadaan.</li>
+          </ul>
         </div>
-        <div class="p-5 rounded-xl border border-slate-200">
-          <span class="text-xs font-bold text-slate-400">02 · TATA KELOLA</span>
-          <h3 class="font-semibold text-slate-900 mt-1">Kebijakan Jelas &amp; Adil</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Menyusun SOP, matriks kewenangan, dan skema remunerasi yang melindungi kepentingan perusahaan sekaligus adil bagi karyawan.</p>
+
+        <!-- Role 2 -->
+        <div class="relative">
+          <span class="w-3 h-3 rounded-full bg-slate-400 absolute -left-[31px] top-1.5 ring-4 ring-white"></span>
+          <p class="text-xs font-mono-code text-slate-500">Agu 2025 – Apr 2026 · Jakarta / Bekasi</p>
+          <h3 class="text-lg font-bold text-slate-900 mt-0.5">Sr. HCGA Operations &amp; Industrial Relations Specialist</h3>
+          <p class="text-sm font-medium text-slate-700">PT Hegemoni Capital Innovation (Brighty)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-4">
+            <li>Mengelola rekrutmen <em>end-to-end</em> dengan memanfaatkan Applicant Tracking System (ATS) dan perangkat <em>AI sourcing</em> untuk mempercepat seleksi.</li>
+            <li>Mengelola siklus administrasi kontrak kerja (PKWT/PKWTT), SK mutasi/promosi, database personalia, dukungan payroll, serta konsultasi dan penanganan keluhan karyawan.</li>
+          </ul>
         </div>
-        <div class="p-5 rounded-xl border border-slate-200">
-          <span class="text-xs font-bold text-slate-400">03 · OTOMASI</span>
-          <h3 class="font-semibold text-slate-900 mt-1">Sistem Ringan &amp; Terkontrol</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Mengeliminasi pekerjaan administratif berulang lewat otomatisasi alur persetujuan, penguncian data, dan pelaporan otomatis.</p>
+
+        <!-- Role 3 -->
+        <div class="relative">
+          <span class="w-3 h-3 rounded-full bg-slate-400 absolute -left-[31px] top-1.5 ring-4 ring-white"></span>
+          <p class="text-xs font-mono-code text-slate-500">Jul 2023 – Jul 2025 · Bekasi</p>
+          <h3 class="text-lg font-bold text-slate-900 mt-0.5">Junior HR &amp; General Affairs Specialist</h3>
+          <p class="text-sm font-medium text-slate-700">Lion Wings Group (PT Lion Metal Works Tbk)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-4">
+            <li>Mengelola kepesertaan dan pembayaran rutin BPJS Ketenagakerjaan &amp; BPJS Kesehatan (SIPP &amp; Edabu) dengan tingkat kepatuhan 100%, serta tata kelola data di Talenta HRIS.</li>
+            <li>Mengkoordinasikan rekrutmen <em>end-to-end</em>, dukungan rekapitulasi lembur/payroll, serta penghubung utama dengan vendor dan penyedia jasa alih daya.</li>
+            <li>Mengawasi pemeliharaan fasilitas pabrik &amp; kantor, inventaris gedung, logistik perjalanan dinas, serta audit pengeluaran <em>petty cash</em> operasional.</li>
+          </ul>
         </div>
-        <div class="p-5 rounded-xl border border-slate-200">
-          <span class="text-xs font-bold text-slate-400">04 · ADOPSI</span>
-          <h3 class="font-semibold text-slate-900 mt-1">Penyelarasan Stakeholder</h3>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Membangun kesepakatan antara direksi, pimpinan operasional, vendor, dan tim lapangan agar kebijakan berjalan konsisten.</p>
+
+        <!-- Role 4 -->
+        <div class="relative">
+          <span class="w-3 h-3 rounded-full bg-slate-300 absolute -left-[31px] top-1.5 ring-4 ring-white"></span>
+          <p class="text-xs font-mono-code text-slate-500">Jun 2022 – Mei 2023 · Bekasi</p>
+          <h3 class="text-lg font-bold text-slate-900 mt-0.5">HR Generalist Intern</h3>
+          <p class="text-sm font-medium text-slate-700">PT Prakarsa Alam Segar Tbk (Wings Group — Mie Sedaap)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-4">
+            <li>Mendukung audit data absensi dan lembur harian, rekapitulasi siklus penilaian kinerja (KPI), pengarsipan dokumen audit manufaktur skala besar, serta seleksi rekrutmen volume tinggi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education & Certifications Grid -->
+      <div class="grid md:grid-cols-2 gap-6 mt-12 pt-10 border-t border-slate-200 text-sm">
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-base mb-4">Pendidikan</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold text-slate-900">Magister Manajemen (M.M.) — Manajemen SDM</p>
+              <p class="text-slate-600">Universitas Persada Indonesia Y.A.I · Jakarta (2024–2026)</p>
+              <p class="text-xs font-mono-code text-slate-500 mt-0.5">IPK: 3,89 / 4,00</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200">
+              <p class="font-semibold text-slate-900">Sarjana Psikologi (S.Psi.)</p>
+              <p class="text-slate-600">Universitas Bhayangkara Jakarta Raya · Bekasi (2020–2024)</p>
+              <p class="text-xs font-mono-code text-slate-500 mt-0.5">IPK: 3,79 / 4,00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+          <h3 class="font-bold text-slate-900 text-base mb-4">Sertifikasi &amp; Kredensial</h3>
+          <ul class="space-y-2.5 text-slate-700">
+            <li class="flex items-start gap-2">
+              <span class="font-mono-code text-xs font-bold px-2 py-0.5 rounded bg-slate-900 text-white mt-0.5">BNSP</span>
+              <span><strong>HR Admin Staff Certified</strong> — Badan Nasional Sertifikasi Profesi</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="font-mono-code text-xs font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800 mt-0.5">CERT</span>
+              <span><strong>Talent Acquisition Professional</strong> — HR Class</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="font-mono-code text-xs font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800 mt-0.5">CERT</span>
+              <span><strong>Master Human Resource &amp; Intermediate HR Certified</strong> — Class.work</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Keahlian & Tools Section -->
-  <section id="keahlian" class="max-w-5xl mx-auto px-5 py-16">
-    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Kompetensi Inti &amp; Perangkat</p>
+  <!-- Keahlian & Tools (Categorized Matrix mirrored from reference) -->
+  <section id="keahlian" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Keahlian &amp; Perangkat</p>
     <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
-      Kapabilitas strategis, operasional, dan digital
+      Praktisi HCGA dari kebijakan strategis hingga otomasi operasional.
     </h2>
 
-    <div class="grid sm:grid-cols-2 gap-6 mt-8 text-sm">
-      <div class="bg-white p-6 rounded-xl border border-slate-200">
-        <h3 class="font-semibold text-slate-900 mb-3">Strategic HCGA, OD &amp; Industrial Relations</h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Strategic Manpower Planning</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Labor Cost &amp; Overtime Optimization</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Industrial Relations &amp; Labor Law</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Outsourcing &amp; Vendor Governance</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Compensation &amp; Tiering Design</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Talent Assessment &amp; OJT Pipeline</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">General Affairs &amp; Facility Ops</span>
-        </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 text-sm">
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-slate-900 pb-2.5 border-b border-slate-100">Organization Development &amp; HR</h3>
+        <ul class="mt-3 space-y-2 text-slate-600 text-xs">
+          <li>Strategic Workforce Planning</li>
+          <li>KPI &amp; Performance Framework</li>
+          <li>Compensation &amp; Tiering Design</li>
+          <li>End-to-End Recruitment &amp; AI Sourcing</li>
+          <li>Talent Mapping &amp; OJT Pipeline</li>
+          <li>Psychological Testing (Pauli)</li>
+        </ul>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200">
-        <h3 class="font-semibold text-slate-900 mb-3">People Analytics, HRIS &amp; Automation</h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">People Analytics &amp; Cost Modeling</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Google Apps Script &amp; Web App</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Advanced Google Sheets &amp; Excel</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Talenta HRIS &amp; Payroll Reconciliation</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Mekari Sign</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Freshdesk Helpdesk</span>
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md">Process Mapping (Draw.io &amp; Xmind)</span>
-        </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-slate-900 pb-2.5 border-b border-slate-100">Industrial Relations &amp; Statutory</h3>
+        <ul class="mt-3 space-y-2 text-slate-600 text-xs">
+          <li>Kepatuhan UU Cipta Kerja</li>
+          <li>PKWT / PKWTT &amp; SK Lifecycle</li>
+          <li>Outsourcing &amp; Security Vendor Audit</li>
+          <li>Dispute &amp; Grievance Resolution</li>
+          <li>BPJS Ketenagakerjaan (SIPP)</li>
+          <li>BPJS Kesehatan (Edabu)</li>
+        </ul>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-slate-900 pb-2.5 border-b border-slate-100">General Affairs &amp; Operations</h3>
+        <ul class="mt-3 space-y-2 text-slate-600 text-xs">
+          <li>Building &amp; Facility Maintenance</li>
+          <li>HSE Implementation</li>
+          <li>Vendor Procurement &amp; Negotiation</li>
+          <li>Operational Fleet &amp; Logistics</li>
+          <li>Petty Cash &amp; Budget Control</li>
+          <li>Daily Worker &amp; Shift Operations</li>
+        </ul>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-slate-900 pb-2.5 border-b border-slate-100">HRIS, Analytics &amp; Automation</h3>
+        <ul class="mt-3 space-y-2 text-slate-600 text-xs">
+          <li>Talenta HRIS &amp; Payroll Support</li>
+          <li>Google Apps Script &amp; Web App</li>
+          <li>Advanced Google Sheets &amp; Excel</li>
+          <li>ATS &amp; Mekari Sign</li>
+          <li>Freshdesk &amp; GPS Supertrack</li>
+          <li>People Analytics &amp; Cost Modeling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-slate-100 border border-slate-200 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3 text-xs">
+      <span class="font-semibold text-slate-900">Siap berkontribusi sebagai:</span>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-md bg-white border border-slate-200 font-medium text-slate-800">HCGA Manager</span>
+        <span class="px-3 py-1 rounded-md bg-white border border-slate-200 font-medium text-slate-800">HR Business Partner (HRBP)</span>
+        <span class="px-3 py-1 rounded-md bg-white border border-slate-200 font-medium text-slate-800">Organization Development Manager</span>
+        <span class="px-3 py-1 rounded-md bg-white border border-slate-200 font-medium text-slate-800">Industrial Relations &amp; HR Ops Lead</span>
       </div>
     </div>
   </section>
 
   <!-- Kontak Section -->
   <section id="kontak" class="bg-slate-900 text-white">
-    <div class="max-w-5xl mx-auto px-5 py-16">
-      <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Kontak</p>
-      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mt-1">
-        Terbuka untuk peluang kepemimpinan HCGA &amp; diskusi strategis.
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+      <p class="text-xs font-mono-code uppercase tracking-wider text-slate-400">Kontak</p>
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mt-2 max-w-2xl">
+        Terbuka untuk peluang kepemimpinan HCGA &amp; diskusi transformasi SDM.
       </h2>
       <p class="text-slate-300 mt-3 max-w-xl text-sm sm:text-base leading-relaxed">
-        Mari berdiskusi mengenai pengelolaan HCGA multi-unit, efisiensi biaya tenaga kerja, hubungan industrial, maupun transformasi sistem operasional SDM.
+        Silakan hubungi saya untuk diskusi seputar pengelolaan HCGA multi-unit, efisiensi biaya tenaga kerja, hubungan industrial, maupun digitalisasi operasional HR.
       </p>
 
-      <div class="mt-8 flex flex-wrap gap-4 text-sm">
-        <a href="mailto:ghianu@hegemonigroup.com" class="px-5 py-3 rounded-lg bg-white text-slate-900 font-medium hover:bg-slate-100 transition">
-          ghianu@hegemonigroup.com
+      <div class="mt-8 grid sm:grid-cols-3 gap-4 max-w-3xl text-sm">
+        <a href="mailto:ghianua@gmail.com" class="p-4 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-normal text-slate-500">Email</p>
+            <p>ghianua@gmail.com</p>
+          </div>
+          <span>↗</span>
         </a>
-        <a href="https://wa.me/6289529531663" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white font-medium hover:bg-slate-700 transition">
-          WhatsApp: +62 895-2953-1663
+        <a href="https://wa.me/6289529531663" target="_blank" rel="noopener" class="p-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-normal text-slate-400">WhatsApp / Telepon</p>
+            <p>+62 895-2953-1663</p>
+          </div>
+          <span>↗</span>
+        </a>
+        <a href="https://linkedin.com/in/ghianuadams" target="_blank" rel="noopener" class="p-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-normal text-slate-400">LinkedIn</p>
+            <p>linkedin.com/in/ghianuadams</p>
+          </div>
+          <span>↗</span>
         </a>
       </div>
 
       <div class="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-400 flex flex-wrap justify-between gap-2">
-        <span>© 2026 Ghianu Adams Herlambang</span>
-        <span>Bekasi · Cikarang · Jakarta Timur</span>
+        <span>© 2026 Ghianu Adams Herlambang, S.Psi., M.M.</span>
+        <span>Bekasi · Cikarang · Jakarta Timur, Indonesia</span>
       </div>
     </div>
   </section>
